@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DISTANCIA 04</string>
+    <string name="title">App Repaso</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="edad">Edad</string>
+    <string name="tfn">Telefono</string>
+    <string name="pass">Password</string>
+    <string name="password">*********</string>
+    <string name="Registro">Registro</string>
+</resources>

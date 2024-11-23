@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">DISTANCIA 04</string>
+        <string name="title">App Review</string>
+        <string name="nombre">Name</string>
+        <string name="apellido">Surname</string>
+        <string name="edad">Age</string>
+        <string name="tfn">Phone</string>
+        <string name="pass">Password</string>
+        <string name="password">*********</string>
+        <string name="Registro">Register</string>
+</resources>
