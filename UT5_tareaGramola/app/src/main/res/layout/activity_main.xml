@@ -1,0 +1,78 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Imagen de la gramola en el centro -->
+    <ImageView
+        android:id="@+id/gramola"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/jukebox"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.5" />
+
+    <!-- Botón superior central -->
+    <ImageButton
+        android:id="@+id/ivcecilia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/cecilia"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/gramola"
+        app:layout_constraintStart_toStartOf="@id/gramola"
+        app:layout_constraintEnd_toEndOf="@id/gramola"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.2" />
+
+
+    <!-- Botón inferior central -->
+    <ImageButton
+        android:id="@+id/ivziggy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ziggy"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/gramola"
+        app:layout_constraintStart_toStartOf="@id/gramola"
+        app:layout_constraintEnd_toEndOf="@id/gramola"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.2" />
+
+    <!-- Botón a la izquierda de la gramola -->
+    <ImageButton
+        android:id="@+id/ivsatellite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/satellite"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/gramola"
+        app:layout_constraintTop_toTopOf="@id/gramola"
+        app:layout_constraintBottom_toBottomOf="@id/gramola"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.2" />
+
+    <!-- Botón a la derecha de la gramola -->
+    <ImageButton
+        android:id="@+id/ivcandy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/candy"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/gramola"
+        app:layout_constraintTop_toTopOf="@id/gramola"
+        app:layout_constraintBottom_toBottomOf="@id/gramola"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
