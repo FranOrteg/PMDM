@@ -25,14 +25,7 @@ public class VideoActivity extends AppCompatActivity {
 
         // Cargar el recurso del video
         if (videoResId != -1) {
-            String videoPath = "file:///android_res/raw/" + getResources().getResourceEntryName(videoResId) + ".mp4";
-            //webView.loadUrl(videoPath);  // Cargar el video en WebView
-
-
             String rutaVideo = "android.resource://com.example.ejerciciocopia/" + videoResId;
-
-
-
             Uri uri = Uri.parse(rutaVideo);
 
             vwReproductor.setVideoURI(uri);
