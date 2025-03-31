@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
         lista = new ArrayList<DatosCurso>();
 
         ArrayAdapter<String > miadaptador;
+        if (NetworkUtil.isInternetAvailable(this)) {
+            Toast.makeText(this, "Conectado a Internet", Toast.LENGTH_SHORT).show();
+
         RequestQueue request = Volley.newRequestQueue(this);
         //Como el elemento raiz en este caso (Viendo el fichero JSON) es un objeto (no un array)
         // instanciamos un jsonObjectRequest (si fuera un array instanciariamos un JsonArrayRequest)
@@ -133,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
 
         request.add(jsonObjectRequest);
         tv1.setText(cad);
+        } else {
+            Toast.makeText(this, "Sin conexión a Internet", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
