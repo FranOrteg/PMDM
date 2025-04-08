@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Localizador"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/localizador"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Introduzca Localidad"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/Localizador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buscar"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/buscar"
+        app:layout_constraintTop_toTopOf="@id/editTextText"
+        app:layout_constraintBottom_toBottomOf="@id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitud"
+        app:layout_constraintTop_toBottomOf="@id/editTextText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/numlat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/valorInicial"
+        app:layout_constraintTop_toTopOf="@id/latitud"
+        app:layout_constraintStart_toEndOf="@id/latitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitud"
+        app:layout_constraintTop_toBottomOf="@id/numlat"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/numlong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/valorInicial"
+        app:layout_constraintTop_toTopOf="@id/longitud"
+        app:layout_constraintStart_toEndOf="@id/longitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/mapa"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="@string/mostrar_en_mapa"
+        app:layout_constraintTop_toBottomOf="@id/numlong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ejemploAVmaps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="introduzca_localidad">Introduzca localidad</string>
+    <string name="longitud">Longitud:</string>
+    <string name="latitud">Latitud:</string>
+    <string name="localizador">Localizador de población</string>
+    <string name="mostrar_en_mapa">MOSTRAR EN MAPA</string>
+    <string name="buscar">BUSCAR</string>
+
+
+    <string name="valorInicial">00</string>
+</resources>
