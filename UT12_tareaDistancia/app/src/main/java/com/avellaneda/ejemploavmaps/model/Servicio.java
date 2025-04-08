@@ -11,7 +11,7 @@ public interface Servicio {
 
 
     // La URL base para Retrofit (esto es solo para configurar la URL base, no se coloca en el @GET)
-    String BASE_URL = "https://alvarogonzalezsotillo.github.io/apuntes-clase/";
+    String BASE_URL = "https://raw.githubusercontent.com/nataliainformatica/PMDMdistancia/refs/heads/master/recursos/";
 
     // El método que obtiene los datos de la API usando el endpoint especificado
     @GET("city.list.json")
